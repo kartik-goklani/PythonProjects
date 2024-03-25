@@ -22,8 +22,8 @@ class QuizInterface:
             fill=THEME_COLOR)
         self.canvas.grid(column=0, row=1, columnspan=2, pady=50)
 
-        tick_image = PhotoImage(file='images/true.png')
-        cross_image = PhotoImage(file='images/false.png')
+        tick_image = PhotoImage(file='true.png')
+        cross_image = PhotoImage(file='false.png')
         self.tick_button = Button(image=tick_image, highlightthickness=0, command=self.check_if_true)
         self.tick_button.grid(column=0, row=2)
         self.cross_button = Button(image=cross_image, highlightthickness=0, command=self.check_if_false)
